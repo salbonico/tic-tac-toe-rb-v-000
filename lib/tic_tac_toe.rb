@@ -70,7 +70,7 @@ xo = current_player(board)
 if valid_move?(board,index) == true
 
 move(board,index,xo)
-
+turn(board)
 else turn(board)
 
 end
@@ -241,5 +241,6 @@ end
 def play(board)
 until over?(board)
   turn(board)
+  
 end
 end

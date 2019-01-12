@@ -71,7 +71,7 @@ if valid_move?(board,index) == true
 
 move(board,index,xo)
 
-else play(board)
+else turn(board)
 
 end
 

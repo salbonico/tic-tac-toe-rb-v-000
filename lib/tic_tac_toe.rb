@@ -45,7 +45,7 @@ end
 
 
 
-def move(board, index, xo ="X")
+def move(board, index, xo="X")
 
 
 board[index] = xo

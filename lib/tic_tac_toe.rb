@@ -243,12 +243,3 @@ until over?(board)
   turn(board)
 end
 
-  if draw?
-    puts "Cat's Game!"
-  end
-
-  if won?
-    winner = winner(board)
-    puts "Congrats to the Winner, #{winner}!"
-  end
-end

@@ -245,11 +245,10 @@ end
 
   if draw?
     puts "Cat's Game!"
-  end 
-  
+  end
+
   if won?
     winner = winner(board)
     puts "Congrats to the Winner, #{winner}!"
   end
 end
-    

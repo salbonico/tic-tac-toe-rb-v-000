@@ -71,6 +71,13 @@ if valid_move?(board,index) == true
 
 move(board,index,xo)
 
+if won?(board) == true
+  winner = winner(board)
+  puts "Congratulations #{winner}!"
+elsif draw?(board) == true
+  puts "Cat's Game!"
+end
+
 else turn(board)
 
 end
@@ -241,12 +248,6 @@ end
 def play(board)
 until over?(board)
   turn(board)
-  if won?(board) == true
-    winner = winner(board)
-    puts "Congratulations #{winner}!"
-  elsif draw?(board) == true
-    puts "Cat's Game!"
-  end
 end
 
 

@@ -237,7 +237,7 @@ end
 
 end
 
-
+return nil
 end
 
 
@@ -251,6 +251,4 @@ until over?(board)
   elsif draw?(board) == true
     puts "Cat's Game!"
 end
-
-
 end

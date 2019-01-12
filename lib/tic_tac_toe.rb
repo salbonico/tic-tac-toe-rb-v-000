@@ -246,7 +246,7 @@ def play(board)
 until over?(board)
   turn(board)
 
-  if won?(board) != nil
+  if won?(board) == true
     winner = winner(board)
     puts "Congratulations #{winner}!"
   elsif draw?(board) == true

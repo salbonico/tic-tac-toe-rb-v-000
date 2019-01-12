@@ -92,7 +92,7 @@ def turn_count(board)
     count = turn_count(board)
     if count % 2 == 0
       return "X"
-    else return "Y"
+    else return "O"
     end
   end
 

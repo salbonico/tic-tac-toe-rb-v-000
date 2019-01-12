@@ -236,3 +236,12 @@ end
 return nil
 
 end
+
+
+def play(board)
+  if draw?
+    puts "Cat's Game!"
+  elsif won?
+    winner = winner(board)
+    puts "Congrats to the Winner, #{winner}!"
+    

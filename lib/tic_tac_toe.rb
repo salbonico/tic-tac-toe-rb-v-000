@@ -50,12 +50,7 @@ def move(board, index, xo)
 
 board[index] = xo
 
-if won?(board) == true
-  winner = winner(board)
-  puts "Congratulations #{winner}!"
-elsif draw?(board) == true
-  puts "Cat's Game!"
-end
+
 
 display_board(board)
 
@@ -251,6 +246,11 @@ def play(board)
 until over?(board)
   turn(board)
 end
-
+if won?(board) == true
+  winner = winner(board)
+  puts "Congratulations #{winner}!"
+elsif draw?(board) == true
+  puts "Cat's Game!"
+end
 
 end

@@ -143,13 +143,13 @@ end
 
 if tempx == true || tempo == true
 
-return combo
+return true
 
 end
 
 end
 
-return nil
+return false
 
 end
 
